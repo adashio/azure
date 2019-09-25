@@ -1,3 +1,2 @@
 # azure
-Test1
-Test2
+Test0
