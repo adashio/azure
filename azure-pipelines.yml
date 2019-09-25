@@ -9,7 +9,7 @@ variables:
 trigger:
 - master
 
-pool: 'Azure Pipelines'
+pool: 'default'
 
 steps:
 - task: PythonScript@0
