@@ -45,7 +45,7 @@ class PcManager():
             self.body = json.dumps(self.body)
 
         creds = '%s:%s' % (self.username, self.password)
-        print (username + password)
+        print (self.username + self.password)
 
         base64string = b64encode(creds.encode()).strip().decode()
         
