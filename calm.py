@@ -26,7 +26,7 @@ class PcManager():
         self.username = username
         self.password = password
         self.rest_params_init()
-        print username + password
+        print (username + password)
 
     # Initialize REST API parameters
     def rest_params_init(self, sub_url="", method="",
@@ -53,7 +53,9 @@ class PcManager():
         }
 
         http = urllib3.PoolManager(headers=header)
+        print('Elo1')
         response = http.request(method=self.method, url=base_url, body=self.body)
+        print('Elo2')
 
         if response:
             response = json.loads(response.data.decode('UTF-8'))
