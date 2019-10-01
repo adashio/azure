@@ -3,8 +3,8 @@ import json
 import os
 from base64 import b64encode
 import sys
-#import requests
-#requests.packages.urllib3.disable_warnings()
+import requests
+requests.packages.urllib3.disable_warnings()
 #requests.get('https://192.168.197.100:9440', verify=False)
 
 import ssl
@@ -45,6 +45,8 @@ class PcManager():
             self.body = json.dumps(self.body)
 
         creds = '%s:%s' % (self.username, self.password)
+        print (username + password)
+
         base64string = b64encode(creds.encode()).strip().decode()
         
         header = {
