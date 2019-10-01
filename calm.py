@@ -26,6 +26,7 @@ class PcManager():
         self.username = username
         self.password = password
         self.rest_params_init()
+        print username + password
 
     # Initialize REST API parameters
     def rest_params_init(self, sub_url="", method="",
