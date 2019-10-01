@@ -5,7 +5,7 @@ from base64 import b64encode
 import sys
 import requests
 requests.packages.urllib3.disable_warnings()
-requests.get('https://192.168.197.100', verify=False)
+requests.get('https://192.168.197.100:9440', verify=False)
 
 import ssl
 
